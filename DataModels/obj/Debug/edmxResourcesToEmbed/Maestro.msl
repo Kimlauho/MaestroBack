@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MaestroModelStoreContainer" CdmEntityContainer="MaestroEntities">
+    <FunctionImportMapping FunctionImportName="sp_CreateEditCity" FunctionName="MaestroModel.Store.sp_CreateEditCity">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MaestroModel.sp_CreateEditCity_Result">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_CreateEditSeller" FunctionName="MaestroModel.Store.sp_CreateEditSeller">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MaestroModel.sp_CreateEditSeller_Result">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+          <ScalarProperty Name="DOCUMENT" ColumnName="DOCUMENT" />
+          <ScalarProperty Name="CITY_ID" ColumnName="CITY_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_DeleteCity" FunctionName="MaestroModel.Store.sp_DeleteCity">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MaestroModel.sp_DeleteCity_Result">
+          <ScalarProperty Name="NOTA" ColumnName="NOTA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_DeleteSeller" FunctionName="MaestroModel.Store.sp_DeleteSeller">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MaestroModel.sp_DeleteSeller_Result">
+          <ScalarProperty Name="NOTA" ColumnName="NOTA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetCities" FunctionName="MaestroModel.Store.sp_GetCities">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MaestroModel.sp_GetCities_Result">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetSellers" FunctionName="MaestroModel.Store.sp_GetSellers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MaestroModel.sp_GetSellers_Result">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+          <ScalarProperty Name="DOCUMENT" ColumnName="DOCUMENT" />
+          <ScalarProperty Name="CITY_ID" ColumnName="CITY_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

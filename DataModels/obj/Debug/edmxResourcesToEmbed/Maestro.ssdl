@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MaestroModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="sp_CreateEditCity" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CODE" Type="int" Mode="In" />
+    <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_CreateEditSeller" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CODE" Type="int" Mode="In" />
+    <Parameter Name="NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="LAST_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="DOCUMENT" Type="nvarchar" Mode="In" />
+    <Parameter Name="CITY_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_DeleteCity" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CODE" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_DeleteSeller" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CODE" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_GetCities" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_GetSellers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="S_CODE" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="MaestroModelStoreContainer" />
+</Schema>
